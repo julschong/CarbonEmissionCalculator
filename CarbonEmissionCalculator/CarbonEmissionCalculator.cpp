@@ -425,20 +425,22 @@ int main()
 	cout << "----Summary of Your Carbon Footprint----Annual Equivalence CO2 Emissions (lbs.)----" << endl << endl;
 
 	cout << "Total members: " << totalFamilyMember << " State: " << state << " Zip-code: " << zipCode << endl
-		<< "Carbon Emission (CO2) is from the Household Energies: " << totalHouseholdEmissionBeforeSaving << " (lbs)" << endl
-		<< "Carbon Emission (CO2) is from the Household Vehicles: " << totalVehicleEmissionBeforeSaving << " (lbs)" << endl
-		<< "Carbon Emission (CO2) is from the Household Wastes: " << wasteEmissionAfterRecyle << " (lbs)" << endl
-		<< "Current total Carbon Emission (CO2) is from the Household: "
+		<< "\tCarbon Emission (CO2) is from the Household Energies: " << totalHouseholdEmissionBeforeSaving << " (lbs)" << endl
+		<< "\tCarbon Emission (CO2) is from the Household Vehicles: " << totalVehicleEmissionBeforeSaving << " (lbs)" << endl
+		<< "\tCarbon Emission (CO2) is from the Household Wastes: " << wasteEmissionAfterRecyle << " (lbs)" << endl;
+	
+	cout << "Current total Carbon Emission (CO2) is from the Household: "
 		<< (totalHouseholdEmissionBeforeSaving + totalVehicleEmissionBeforeSaving + wasteEmissionAfterRecyle) << " (lbs)" << endl
 		<< "Number of trees is required to absorb the total emission: "
 		<< round((totalHouseholdEmissionBeforeSaving + totalVehicleEmissionBeforeSaving + wasteEmissionAfterRecyle) / TREE_ABSORB_CO2) << endl << endl;
 
 	//	Calculate total number of total trees that can absorb the emission 
 	cout << "Carbon Emission (CO2) is Savings after Planning:" << endl
-		<< "Carbon Emission (CO2) is Savings from the Household Energies: " << totalHouseholdEmissionSaving << " (lbs)" << endl
-		<< "Carbon Emission (CO2) is Savings from the Household Vehicles: " << totalVehicleEmissionSaving << " (lbs)" << endl
-		<< "Carbon Emission (CO2) is Savings from the Household Wastes: " << totalWasteEmissionSaving << " (lbs)" << endl
-		<< "Total Carbon Emission (CO2) is from the Household: "
+		<< "\tCarbon Emission (CO2) is Savings from the Household Energies: " << totalHouseholdEmissionSaving << " (lbs)" << endl
+		<< "\tCarbon Emission (CO2) is Savings from the Household Vehicles: " << totalVehicleEmissionSaving << " (lbs)" << endl
+		<< "\tCarbon Emission (CO2) is Savings from the Household Wastes: " << totalWasteEmissionSaving << " (lbs)" << endl;
+
+	cout << "Total Carbon Emission (CO2) is from the Household: "
 		<< (totalHouseholdEmissionSaving + totalVehicleEmissionSaving + totalWasteEmissionSaving) << " (lbs)" << endl
 		<< "Total Savings are Equivalence to the number of trees: "
 		<< round((totalHouseholdEmissionSaving + totalVehicleEmissionSaving + totalWasteEmissionSaving) / TREE_ABSORB_CO2) << endl << endl

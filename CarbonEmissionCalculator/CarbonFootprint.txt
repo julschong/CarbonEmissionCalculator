@@ -1,19 +1,19 @@
 ----Summary of Your Carbon Footprint----Annual CO2 Emissions (lbs.)----
 
 Total members: 5 State: CA Zip-code: 91761
-Carbon Emission (CO2) is from the Household Energies: 32418.9 (lbs)
-Carbon Emission (CO2) is from the Household Vehicles: 39.592 (lbs)
-Carbon Emission (CO2) is from the Household Wastes: 3460 (lbs)
-Current total Carbon Emission (CO2) is from the Household: 35918.5 (lbs)
-Number of trees is required to absorb the total emission: 748
+Carbon Emission (CO2) is from the Household Energies: 1620.94 (lbs)
+Carbon Emission (CO2) is from the Household Vehicles: 19.796 (lbs)
+Carbon Emission (CO2) is from the Household Wastes: 2005.35 (lbs)
+Current total Carbon Emission (CO2) is from the Household: 3646.09 (lbs)
+Number of trees is required to absorb the total emission: 76
 
 Carbon Emission (CO2) is Savings after Planning:
-Carbon Emission (CO2) is Savings from the Household Energies: 0 (lbs)
-Carbon Emission (CO2) is Savings from the Household Vehicles: 0 (lbs)
-Carbon Emission (CO2) is Savings from the Household Wastes: 0 (lbs)
-Total Carbon Emission (CO2) is from the Household: 0 (lbs)
-Total Savings are Equivalence to the number of trees: 0
+Carbon Emission (CO2) is Savings from the Household Energies: 518.9 (lbs)
+Carbon Emission (CO2) is Savings from the Household Vehicles: 19.796 (lbs)
+Carbon Emission (CO2) is Savings from the Household Wastes: 1454.65 (lbs)
+Total Carbon Emission (CO2) is from the Household: 1993.35 (lbs)
+Total Savings are Equivalence to the number of trees: 42
 
-New Total Carbon Emission (CO2) is after taking the saving actions: 35918.5 (lbs)
-Number of trees is required to absorb the new total emission: 748
+New Total Carbon Emission (CO2) is after taking the saving actions: 1652.74 (lbs)
+Number of trees is required to absorb the new total emission: 34
 

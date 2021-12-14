@@ -4,18 +4,13 @@
 *Date: 12/09/21
 */
 #include <iostream>
-#include <fstream>
-#include <string>
-#include <vector>
-#include <sstream>
-#include <cmath>
 #include "Util.h"
 #include "Constants.h"
 #include "Calculations.h"
 
 using namespace std;
 
-
+// ============================= Program entry point =============================
 int main()
 {
 	int totalFamilyMember = 0, recyleOrNot = 0, reduceActionOrNot = 0, numberofBulbs = 0;
@@ -65,6 +60,7 @@ int main()
 	//	This .csv file contains the ZIP codes, State codes and CO2 emission factors for different state
 	//	return value is a vector
 	vector<vector<string>> CSVFileEmissionFactor = ReadCSVFile();
+
 	//	Check the CSV file was not found or empty; the program needed the CSV file information
 	if (CSVFileEmissionFactor.empty())
 	{
@@ -222,9 +218,14 @@ int main()
 		while (cin.fail() || milagesPerGallon < 0) {
 			int func = CheckValidInput(milagesPerGallon, "Please enter a valid number for total mileage per gallon : ");
 		}
-		calculatedVehicleEmission = CalculateVehicleEmission(drivenMilesPerYear, milagesPerGallon, EMISSION_FACTOR_PASSENGER_VEHICLE, NON_CO2_VEHICLE_EMISSION_RATIO); // function returns the calculated emissions
+
+		//	Function returns the calculated emissions
+		calculatedVehicleEmission = CalculateVehicleEmission(drivenMilesPerYear, milagesPerGallon, 
+			EMISSION_FACTOR_PASSENGER_VEHICLE, NON_CO2_VEHICLE_EMISSION_RATIO);
 		cout << "Emission produced by the vehicle " << i << ":  " << calculatedVehicleEmission << endl;
-		totalVehicleEmissionBeforeSaving = totalVehicleEmissionBeforeSaving + calculatedVehicleEmission; //calculate total vehicle emission
+
+		//	Calculate total vehicle emission
+		totalVehicleEmissionBeforeSaving = totalVehicleEmissionBeforeSaving + calculatedVehicleEmission; 
 	}
 	cout << endl << endl;
 
@@ -272,7 +273,7 @@ int main()
 	
 
 	// ============================= Recycle questionnaire =============================
-
+	
 	//	If your household recycles metal, then, number of people in household * average number of pounds of CO2 
 	//	equivalent per person per year that could be saved by aluminum and steel cans
 	cout << "Do you recycle aluminum and steel cans? (1=yes, 2 = no): ";
@@ -411,7 +412,6 @@ int main()
 		cout << "Waste emission saved from the magazine per year: " << wasteEmissionMagazine << " (lbs)\n";
 	}
 
-
 	//	Calculate total saving from household waste
 	totalWasteEmissionSaving = wateEmissionAluminium + wasteEmissionPlastic +
 		wasteEmissionGlass + wasteEmissionNewsPaper + wasteEmissionMagazine;
@@ -432,7 +432,6 @@ int main()
 		<< (totalHouseholdEmissionBeforeSaving + totalVehicleEmissionBeforeSaving + wasteEmissionAfterRecyle) << " (lbs)" << endl
 		<< "Number of trees is required to absorb the total emission: "
 		<< round((totalHouseholdEmissionBeforeSaving + totalVehicleEmissionBeforeSaving + wasteEmissionAfterRecyle) / TREE_ABSORB_CO2) << endl << endl;
-
 
 	//	Calculate total number of total trees that can absorb the emission 
 	cout << "Carbon Emission (CO2) is Savings after Planning:" << endl

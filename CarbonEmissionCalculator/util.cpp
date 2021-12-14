@@ -2,8 +2,6 @@
 #include "util.h"
 #include <fstream>
 #include <sstream>
-#include <cmath>
-
 
 
 vector<vector<string>> ReadCSVFile()

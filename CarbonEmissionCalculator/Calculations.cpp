@@ -1,8 +1,5 @@
 #include "Calculations.h"
 #include <iostream>
-#include <fstream>
-#include <sstream>
-#include <cmath>
 
 
 double CalculateVehicleEmission(double drivenMilesPerYear, double mileagesPerGallon, const double EF_PassengerVeh, const double NonCO2VehEmissionRatio)

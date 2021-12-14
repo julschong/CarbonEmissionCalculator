@@ -2,8 +2,6 @@
 #include <vector>
 
 
-
-
 /*	This function calculates the vehicle emission, and how much emission can be saved from the vechicle. The input parameters of this
 *	function are total driven mileages per year, mileages per gallon, emission factor of passenger vehicle, and Non-CO2 vehicle emission
 *	ratio. The vehicle emission is calculated by the following formula:
